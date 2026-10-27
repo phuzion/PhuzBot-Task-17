@@ -1,0 +1,17 @@
+# Bot credentials and login session: never commit these
+user-password.py
+*.lwp
+# Personal settings; user-config.example.py is the template
+user-config.py
+
+# Pywikibot runtime files
+apicache/
+logs/
+throttle.ctrl
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/

@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "infoboxfix"
+version = "0.1.0"
+description = "Pywikibot bot that renames deprecated infobox parameters, bypasses template redirects and aligns infoboxes"
+requires-python = ">=3.10"
+dependencies = ["pywikibot>=9", "mwparserfromhell>=0.6"]
+
+[project.scripts]
+infoboxfix = "infoboxfix.cli:main"
+
+[tool.setuptools]
+packages = ["infoboxfix"]
